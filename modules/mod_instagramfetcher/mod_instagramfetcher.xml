@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" method="upgrade" client="site" >
+	<name>Instagram Fetcher</name>
+    <author>Mostafa Shahiri</author>
+    <copyright></copyright>
+    <license>GNU/GPL</license>
+    <authorEmail>mostafa2134@gmail.com</authorEmail>
+    <authorUrl>www.extensions.joomla.com</authorUrl>
+    <version>1.0</version>
+	<description>
+    Show your recent Instagram posts on your website. German translation by: Pat Finger
+   </description>
+   	<updateservers>
+		<server type="extension" priority="1" name="Instagram Fetcher">
+		   https://github.com/mostafa272/Instagram-Fetcher/blob/master/update.xml
+		</server>
+	</updateservers>
+	<files>
+    <filename module="mod_instagramfetcher">mod_instagramfetcher.php</filename>
+    <filename>index.html</filename>
+    <filename>helper.php</filename>
+    <folder>tmpl</folder>
+    <folder>css</folder>
+    <folder>img</folder>
+    </files>
+    <languages>
+    	  <language tag="en-GB">language/en-GB/en-GB.mod_instagramfetcher.ini</language>
+          <language tag="fa-IR">language/fa-IR/fa-IR.mod_instagramfetcher.ini</language>
+          <language tag="de-DE">language/de-DE/de-DE.mod_instagramfetcher.ini</language>
+        </languages>
+    <config>
+    <fields name="params">
+     <fieldset name="basic"  >
+    <field name="token" type="text" default=""   label="MOD_INSTAFETCH_TOKEN_LABEL" description="MOD_INSTAFETCH_TOKEN_DESC" />
+    <field name="count" type="text" default="5"   label="MOD_INSTAFETCH_COUNT_LABEL" description="MOD_INSTAFETCH_COUNT_DESC" />
+    <field name="like" type="radio" default="0" label="MOD_INSTAFETCH_LIKE_LABEL" description="MOD_INSTAFETCH_LIKE_DESC">
+     <option value="1">JYES</option>
+     <option value="0">JNO</option>
+    </field>
+    <field name="comment" type="radio" default="0" label="MOD_INSTAFETCH_COMMENT_LABEL" description="MOD_INSTAFETCH_COMMENT_DESC">
+     <option value="1">JYES</option>
+     <option value="0">JNO</option>
+    </field>
+        <field name="createddate" type="radio" default="0" label="MOD_INSTAFETCH_DATE_LABEL" description="MOD_INSTAFETCH_DATE_DESC">
+     <option value="1">JYES</option>
+     <option value="0">JNO</option>
+    </field>
+    <field name="caption" type="radio" default="0" label="MOD_INSTAFETCH_CAPTION_LABEL" description="MOD_INSTAFETCH_CAPTION_DESC">
+     <option value="1">JYES</option>
+     <option value="0">JNO</option>
+    </field>
+    <field name="customcaption" type="textarea" rows="10" cols="40"   label="MOD_INSTAFETCH_CUSTOM_LABEL" description="MOD_INSTAFETCH_CUSTOM_DESC" />
+    <field name="limitcaption" type="text"   label="MOD_INSTAFETCH_LIMITCAP_LABEL" description="MOD_INSTAFETCH_LIMITCAP_DESC" />
+    <field name="imagestyle" type="list" default="1" label="MOD_INSTAFETCH_STYLE_LABEL" description="MOD_INSTAFETCH_STYLE_DESC">
+    <option value="1">MOD_INSTAFETCH_STYLE1</option>
+	<option value="2">MOD_INSTAFETCH_STYLE2</option>
+    <option value="3">MOD_INSTAFETCH_IMGTHUMBNAIL</option>
+    <option value="4">MOD_INSTAFETCH_STYLE3</option>
+    <option value="5">MOD_INSTAFETCH_STYLE4</option>
+    </field>
+
+    </fieldset>
+
+    </fields>
+
+    </config>
+
+    </extension>

@@ -1,0 +1,18 @@
+
+
+/*===============================
+/media/system/css/frontediting.css
+================================================================================*/
+.jmoddiv.jmodinside{position:relative;top:0;left:0}.btn.jmodedit{z-index:1001;display:block;position:absolute;top:0;right:0}html[dir=rtl] .btn.jmodedit{right:auto;left:0} .btn.jfedit-menu{z-index:1002;display:block}
+
+
+/*===============================
+/modules/mod_fblikeboxslider/css/style.css
+================================================================================*/
+#awesome_facebook{position:relative}#facebookbox1{-webkit-border-radius:5px;-moz-border-radius:5px;border:2px solid #3B5998;background-color:#fff;position:fixed}#facebookbox2{overflow:hidden;text-align:left}#facebookbox1 img{position:absolute;top:0px;cursor:pointer;border:0;z-index:10000}#facebookbox1 iframe{border:0px;overflow:hidden;position:absolute;width:100%;height:100%}
+
+
+/*===============================
+/modules/mod_youtubeslider/assets/style.css
+================================================================================*/
+#youtube_slider{position:relative}#ybox1{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;border:5px solid #cccccc;background-color:#fff;position:fixed}#ybox2{overflow:hidden;text-align:left}#ybox1 img{position:absolute;top:0px;cursor:pointer;border:0;z-index:10000}#ybox1 iframe{border:0px;overflow:hidden;position:absolute;width:100%}

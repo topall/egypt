@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.3" method="upgrade">
+    <name>WhatsHelp Chat Button</name> 
+    <creationDate>2016-09-01</creationDate>
+    <author>WhatsHelp</author>
+    <authorEmail>hello@whatshelp.io</authorEmail>
+    <authorUrl>http://whatshelp.io</authorUrl>
+    <copyright>(c) 2016 WhatsHelp.io</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <version>1.0.0</version>
+    <description>&lt;h3>WhatsHelp Chat Button&lt;/h3&gt;
+	  1. Navigate to Extensions -> Modules, Press "New", choose "WhatsHelp Chat Button" module from the list. Open the module settings. &lt;br&gt;
+      2. Go to &lt;a href="https://whatshelp.io/widget/?utm_campaign=joomla_plugin&amp;utm_medium=widget&amp;utm_source=joomla" target="_blank"&gt;www.whatshelp.io/widget&lt;/a&gt; and get the button code. &lt;br&gt;
+      3. Check standard module settings (Status, Position, Order, Menu assignment etc). &lt;br/&gt;
+      4. Copy and paste the button code into the form in module settings. Press "Save" button.
+    </description>
+
+    <files>
+        <filename module="mod_whatshelp">mod_whatshelp.php</filename>
+        <filename>mod_whatshelp.xml</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+	      <field name="whatshelp_widget_code" type="textarea" rows="15" label="WhatsHelp Button Code" description="Your WhatsHelp Button code" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
